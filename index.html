@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TUYẾT NGÂN ATELIER - Thương hiệu thời trang nữ và váy đầm thiết kế cao cấp bởi Nguyễn Thị Tuyết Ngân (MSSV: 125001247). Tôn vinh nét đẹp kiêu kỳ, thanh lịch và ngọt ngào của phái đẹp.">
+    <meta name="author" content="Nguyễn Thị Tuyết Ngân - MSSV: 125001247">
+    <title>TUYẾT NGÂN ATELIER | Thời Trang Nữ & Váy Đầm Thiết Kế Cao Cấp</title>
+
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans (Hỗ trợ 100% Tiếng Việt có dấu, chuẩn thời trang cao cấp) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Animate.css CDN (Yêu cầu đề thi mục II.3 - Thư viện CSS thuần, không dùng JavaScript) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Main Stylesheet (100% HTML5 & CSS3 Thuần - Không Dùng JavaScript) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-pink">
+
+    <!-- ==================================================
+         1. HEADER & NAVIGATION (Chuẩn Semantic HTML5)
+         Tích hợp Hamburger Menu bằng CSS Checkbox Hack (Bài 5 - KHÔNG DÙNG JAVASCRIPT)
+    ================================================== -->
+    <header class="site-header" id="site-header">
+        <div class="header-topbar">
+            <div class="container topbar-content">
+                <span class="topbar-tagline">🌸 TUYẾT NGÂN ATELIER - NGHỆ THUẬT VÁY ĐẦM THIẾT KẾ NÀNG THƠ 🌸</span>
+                <div class="topbar-contact">
+                    <span>Hotline tư vấn: <strong>0938.125.NGAN</strong></span>
+                    <span class="topbar-divider">|</span>
+                    <span>Showroom: 88 Phố Lụa Tơ Tằm, Quận 1, TP.HCM</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar container" aria-label="Menu điều hướng chính">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="Trang chủ Tuyết Ngân Atelier">
+                <div class="logo-crest">
+                    <span class="crest-monogram">TN</span>
+                </div>
+                <div class="logo-text-group">
+                    <span class="brand-name">TUYẾT NGÂN</span>
+                    <span class="brand-sub">HAUTE ATELIER</span>
+                </div>
+            </a>
+
+            <!-- Checkbox Menu Mobile Toggle (CSS Checkbox Hack Bài 5 - 100% Thuần CSS, Không Dùng JavaScript) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-label="Mở menu di động">
+            <label for="menu-toggle" class="hamburger-btn" aria-label="Nút mở menu">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
+
+            <!-- Navigation Links Wrapper -->
+            <div class="nav-menu-wrapper">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Trang Chủ</a></li>
+                    <li class="nav-item"><a href="#collections" class="nav-link">Bộ Sưu Tập</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Sản Phẩm Thiết Kế</a></li>
+                    <li class="nav-item"><a href="#fabrics" class="nav-link">Chất Liệu Cao Cấp</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">Quy Trình May Đo</a></li>
+                    <li class="nav-item"><a href="#booking" class="nav-link">Đặt Lịch Hẹn</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Liên Hệ</a></li>
+                </ul>
+
+                <div class="mobile-only-contact">
+                    <p>Tư vấn thiết kế riêng cùng Founder:</p>
+                    <a href="tel:0938125247" class="mobile-phone-link">📞 0938.125.NGAN</a>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-pink-outline nav-cta animate__animated animate__pulse animate__infinite">
+                    Đặt May Nàng Thơ
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================================================
+         2. MAIN CONTENT (Semantic <main>)
+    ================================================== -->
+    <main id="main-content">
+
+        <!-- ==============================================
+             HERO SECTION: Animate.css & Typography Nữ tính ngọt ngào
+        =============================================== -->
+        <section id="home" class="hero-section">
+            <div class="hero-backdrop"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate__animated animate__fadeInDown">
+                        <span class="badge-icon">💖</span>
+                        <span>BỘ SƯU TẬP XUÂN HÈ NÀNG THƠ 2026</span>
+                    </div>
+
+                    <h1 class="hero-title animate__animated animate__fadeInUp">
+                        Feminine Elegance By <br>
+                        <span class="text-pink">Nguyễn Thị Tuyết Ngân</span>
+                    </h1>
+
+                    <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                        Mỗi thiết kế là một khúc hoan ca dành riêng cho nét đẹp thanh tao, dịu dàng và cuốn hút của người phụ nữ hiện đại. Tinh tuyển chất liệu tơ tằm Mulberry, vải dạ Tweed Pháp và ren hoa thêu thủ công.
+                    </p>
+
+                    <div class="hero-cta-group animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#products" class="btn btn-pink btn-luxury">
+                            <span>Khám Phá Bộ Sưu Tập</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#booking" class="btn btn-glass">
+                            <span>Đặt Hẹn May Đo Riêng</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Stats -->
+                    <div class="hero-stats-grid animate__animated animate__fadeIn animate__delay-2s">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Lụa & Tweed dệt thượng hạng</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Giờ đính kết pha lê thủ công</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">Freesize</span>
+                            <span class="stat-label">Hoặc May theo số đo độc bản</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Hơn 3,200 Nàng thơ yêu thích</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             CORE VALUES / PILLARS
+        =============================================== -->
+        <section class="pillars-section">
+            <div class="container">
+                <div class="pillars-grid">
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🪡</div>
+                        <h3 class="pillar-title">Thiết Kế Độc Quyền</h3>
+                        <p class="pillar-desc">Từng mẫu váy đều do chính Nhà thiết kế Tuyết Ngân phác thảo, đắp phom 3D draping trực tiếp trên manocanh tôn trọn đường cong mềm mại.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🌸</div>
+                        <h3 class="pillar-title">Chất Vải Thượng Uyển</h3>
+                        <p class="pillar-desc">Ưu tiên các dòng vải tự nhiên nhẹ mát: Tơ tằm Mulberry, voan tơ tằm Organza, dạ Tweed dệt sợi kim tuyến lấp lánh nhập khẩu Pháp.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">💎</div>
+                        <h3 class="pillar-title">Đính Kết Đá Quý Thủ Công</h3>
+                        <p class="pillar-desc">Các nghệ nhân thêu tay từng đóa hoa ren nổi 3D, xỏ hạt ngọc trai tự nhiên và pha lê Swarovski lấp lánh nơi cổ áo và cổ tay.</p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-icon">🎀</div>
+                        <h3 class="pillar-title">Dịch Vụ Nàng Thơ Trọn Vẹn</h3>
+                        <p class="pillar-desc">Hỗ trợ chỉnh sửa vừa vặn vóc dáng miễn phí, bảo dưỡng giặt hấp cao cấp và hộp quà bọc ruy băng nơ hồng xinh xắn cho mỗi đơn hàng.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             COLLECTIONS SHOWCASE (Grid Layout)
+        =============================================== -->
+        <section id="collections" class="section collections-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">DANH MỤC THỜI TRANG NỮ</span>
+                    <h2 class="section-title">Những Tuyệt Phẩm Dành Cho Nàng Thơ</h2>
+                    <div class="pink-line"></div>
+                    <p class="section-desc">Được sáng tạo để nàng luôn rạng ngời và nổi bật trong mọi khoảnh khắc: từ buổi trà chiều ngọt ngào, tiệc tối lãng mạn đến dạ yến lộng lẫy.</p>
+                </div>
+
+                <div class="collections-grid">
+                    <!-- Category 1 -->
+                    <article class="collection-tile tile-large">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=1000&auto=format&fit=crop" alt="Váy Đầm Thiết Kế Nàng Thơ Tuyết Ngân" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Signature Dress</span>
+                            <h3 class="tile-title">Váy Đầm Xòe Nàng Thơ & Tiểu Thư</h3>
+                            <p class="tile-info">Chất voan tơ mềm mại, bồng bềnh như mây, họa tiết hoa nhí tinh tế.</p>
+                            <a href="#products" class="tile-link">Khám phá mẫu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 2 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=800&auto=format&fit=crop" alt="Đầm Dạ Hội Hồng Phấn Quyến Rũ" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Gala Evening</span>
+                            <h3 class="tile-title">Đầm Dạ Hội & Tiệc Tối Sang Trọng</h3>
+                            <p class="tile-info">Lụa Satin bóng nhẹ, chiết eo thon gọn và tà xẻ quyến rũ.</p>
+                            <a href="#products" class="tile-link">Khám phá mẫu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 3 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=800&auto=format&fit=crop" alt="Áo Kiểu Tiểu Thư Phối Ren" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Chic Blouse</span>
+                            <h3 class="tile-title">Áo Kiểu Tiểu Thư & Sơ Mi Lụa</h3>
+                            <p class="tile-info">Cổ bèo ren Pháp, tay bồng thắt nơ dịu dàng đầy chất thơ.</p>
+                            <a href="#products" class="tile-link">Khám phá mẫu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 4 -->
+                    <article class="collection-tile">
+                        <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=800&auto=format&fit=crop" alt="Chân Váy Xếp Ly Dáng Dài" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Elegant Skirt</span>
+                            <h3 class="tile-title">Chân Váy Xếp Ly & Chữ A Tôn Dáng</h3>
+                            <p class="tile-info">Form dáng bay bổng, che khuyết điểm và tôn vòng eo con kiến.</p>
+                            <a href="#products" class="tile-link">Khám phá mẫu →</a>
+                        </div>
+                    </article>
+
+                    <!-- Category 5 -->
+                    <article class="collection-tile tile-large">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1000&auto=format&fit=crop" alt="Áo Dạ Tweed Tiểu Thư Parisienne" class="tile-img" loading="lazy">
+                        <div class="tile-overlay">
+                            <span class="tile-tag">Parisian Tweed</span>
+                            <h3 class="tile-title">Áo Khoác Dạ Tweed & Set Đồ Thu Đông</h3>
+                            <p class="tile-info">Sợi len dệt hạt ngọc trai lấp lánh, phong thái tiểu thư Paris đài các.</p>
+                            <a href="#products" class="tile-link">Khám phá mẫu →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PRODUCTS SECTION (Semantic <article>, CSS Grid, :hover & :focus)
+        =============================================== -->
+        <section id="products" class="section products-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">BỘ SƯU TẬP BÁN CHẠY NHẤT</span>
+                    <h2 class="section-title">Những Thiết Kế Được Yêu Thích Nhất</h2>
+                    <div class="pink-line"></div>
+                    <p class="section-desc">Mỗi sản phẩm có thể chọn mua theo size tiêu chuẩn (S, M, L) hoặc đặt may riêng theo số đo cá nhân.</p>
+
+                    <!-- Category Navigation Pills -->
+                    <div class="filter-wrapper" role="navigation" aria-label="Danh mục sản phẩm">
+                        <a href="#products" class="filter-btn active">Tất Cả Sản Phẩm</a>
+                        <a href="#products" class="filter-btn">Váy Đầm Nàng Thơ</a>
+                        <a href="#products" class="filter-btn">Áo Dạ Tweed</a>
+                        <a href="#products" class="filter-btn">Đầm Dạ Hội</a>
+                        <a href="#products" class="filter-btn">Áo Kiểu & Sơ Mi</a>
+                        <a href="#products" class="filter-btn">Phụ Kiện Nữ</a>
+                    </div>
+                </div>
+
+                <!-- Product Grid (CSS Grid, :hover effects, semantic <article>) -->
+                <div class="product-grid" id="product-list">
+
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-pink">Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=700&auto=format&fit=crop" alt="Đầm Xòe Công Chúa Hồng Pastel Đính Hoa 3D" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Váy Đầm Thiết Kế</span>
+                            <h3 class="product-title">Pastel Pink Flora Princess Dress</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(128)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">2.850.000₫</span>
+                                <span class="price-old">3.400.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-rose">Luxury Tweed</span>
+                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=700&auto=format&fit=crop" alt="Áo Khoác Dạ Tweed Hồng Thạch Anh Đính Cúc Ngọc Trai" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Áo Khoác Tiểu Thư</span>
+                            <h3 class="product-title">Rose Quartz French Tweed Jacket</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(95)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">3.650.000₫</span>
+                                <span class="price-old">4.200.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-pink">New Arrival</span>
+                            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=700&auto=format&fit=crop" alt="Đầm Dạ Hội Lụa Satin Xẻ Tà Màu Hồng Phấn" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Đầm Dạ Hội Cao Cấp</span>
+                            <h3 class="product-title">Blush Silk Satin Evening Gown</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(74)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">4.890.000₫</span>
+                                <span class="price-old">5.500.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-pink">Feminine Chic</span>
+                            <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?q=80&w=700&auto=format&fit=crop" alt="Áo Sơ Mi Lụa Tay Bồng Phối Nơ Cổ" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Áo Kiểu Nàng Thơ</span>
+                            <h3 class="product-title">Pearl Silk Puff Sleeve Blouse</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(160)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">1.450.000₫</span>
+                                <span class="price-old">1.800.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-rose">Exclusive</span>
+                            <img src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?q=80&w=700&auto=format&fit=crop" alt="Chân Váy Xếp Ly Dáng Dài Hồng Khói" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Chân Váy Thiết Kế</span>
+                            <h3 class="product-title">Dusty Rose Pleated Maxi Skirt</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(88)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">1.680.000₫</span>
+                                <span class="price-old">2.100.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-pink">Princess Cut</span>
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=700&auto=format&fit=crop" alt="Váy Ren Hoa Nổi 3D Cổ Vuông Dáng Xòe" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Váy Đầm Thiết Kế</span>
+                            <h3 class="product-title">French 3D Lace Blossom Midi Dress</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(112)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">3.200.000₫</span>
+                                <span class="price-old">3.800.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 7 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-rose">Set Nàng Thơ</span>
+                            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=700&auto=format&fit=crop" alt="Set Dạ Tweed Croptop Kèm Chân Váy Chữ A" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Set Đồ Tiểu Thư</span>
+                            <h3 class="product-title">Baby Pink Tweed Co-ord Set</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(91)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">4.250.000₫</span>
+                                <span class="price-old">4.900.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 8 -->
+                    <article class="product-card">
+                        <div class="product-thumb">
+                            <span class="product-badge badge-pink">Handmade</span>
+                            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=700&auto=format&fit=crop" alt="Bộ Cài Áo Hoa Trà & Vòng Cổ Ngọc Trai Nước Ngọt" class="product-img" loading="lazy">
+                            <div class="product-actions-overlay">
+                                <a href="#booking" class="quick-action-btn quick-view-btn">Chi Tiết Thiết Kế</a>
+                                <a href="#booking" class="quick-action-btn add-to-cart-btn">Đặt May Ngay</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Phụ Kiện Nữ Cao Cấp</span>
+                            <h3 class="product-title">Camellia Brooch & Freshwater Pearl Set</h3>
+                            <div class="product-rating">★★★★★ <span class="rating-count">(142)</span></div>
+                            <div class="product-price-box">
+                                <span class="price-current">1.250.000₫</span>
+                                <span class="price-old">1.600.000₫</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             3D CARD FLIP SHOWCASE (Kế Thừa Bài 2 Buổi 5 Thuần CSS)
+             Giới thiệu 3 Dòng Chất Liệu Nàng Thơ
+        =============================================== -->
+        <section id="fabrics" class="section fabric-flip-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">CHẤT LIỆU THƯỢNG HẠNG (3D FLIP CARDS BÀI 2)</span>
+                    <h2 class="section-title">3 Dòng Vải Thơ Mộng Tạo Nên Tuyệt Tác</h2>
+                    <div class="pink-line"></div>
+                    <p class="section-desc"><em>Rê chuột (hoặc chạm vào thẻ) để lật mặt sau khám phá bí quyết dệt nên những nếp váy bồng bềnh (100% Thuần CSS 3D).</em></p>
+                </div>
+
+                <div class="flip-card-grid">
+
+                    <!-- Flip Card 1 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front">
+                                <div class="fabric-badge">Bảo Lộc, Việt Nam</div>
+                                <div class="fabric-icon">🕊️</div>
+                                <h3 class="fabric-name">LỤA MULBERRY SILK 100%</h3>
+                                <p class="fabric-origin">Tơ tằm tự nhiên 19 momme</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Mềm mướt như làn da em bé, bắt sáng tự nhiên nhẹ nhàng, giữ ẩm và nâng niu làn da nhạy cảm.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Thông Số Lụa Tơ Tằm</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Độ dày:</strong> 19 Momme dệt Satin óng ả</li>
+                                    <li><strong>Cảm giác da:</strong> Mát lạnh mùa hè, ấm áp mùa đông</li>
+                                    <li><strong>Khả năng thở:</strong> Thoát ẩm tự nhiên 100%</li>
+                                    <li><strong>Sử dụng cho:</strong> Đầm dạ tiệc, áo sơ mi lụa tơ</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-pink-small">Chọn Vải Này</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Card 2 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front highlight-card">
+                                <div class="fabric-badge">Cộng Hòa Pháp</div>
+                                <div class="fabric-icon">👑</div>
+                                <h3 class="fabric-name">FRENCH TWEED DE PARIS</h3>
+                                <p class="fabric-origin">Lyon, France</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Chất dạ Tweed cao cấp dệt sợi kim tuyến ánh nhũ vàng hồng, mang vẻ đẹp kiêu sa của tiểu thư Paris.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Thông Số Dạ Tweed Pháp</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Cấu trúc sợi:</strong> Sợi len cừu phối ánh kim metallic</li>
+                                    <li><strong>Giữ phom:</strong> Đứng dáng áo khoác không xô lệch</li>
+                                    <li><strong>Điểm nhấn:</strong> Dệt kèm viền tưa tua rua phong cách Chanel</li>
+                                    <li><strong>Sử dụng cho:</strong> Áo khoác lửng, chân váy chữ A</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-pink-small">Chọn Vải Này</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flip Card 3 -->
+                    <div class="flip-card-wrapper" tabindex="0">
+                        <div class="flip-card-inner">
+                            <!-- Mặt trước -->
+                            <div class="flip-card-front">
+                                <div class="fabric-badge">Ý & Hàn Quốc</div>
+                                <div class="fabric-icon">🌸</div>
+                                <h3 class="fabric-name">ROYAL ORGANZA CHIFFON</h3>
+                                <p class="fabric-origin">Como, Italy</p>
+                                <div class="fabric-preview-line"></div>
+                                <p class="fabric-front-desc">Chất voan tơ tằm trong suốt mềm mại, nhẹ tựa sương mai, tạo độ phồng xếp lớp bồng bềnh như mây trời.</p>
+                                <span class="flip-hint">↺ Rê chuột hoặc chạm để lật thẻ</span>
+                            </div>
+                            <!-- Mặt sau -->
+                            <div class="flip-card-back">
+                                <h4 class="back-title">Thông Số Voan Organza</h4>
+                                <ul class="spec-list">
+                                    <li><strong>Trọng lượng:</strong> Siêu nhẹ 45g/m², bay bổng tự nhiên</li>
+                                    <li><strong>Họa tiết:</strong> Thêu hoa chìm nhạt màu pastel</li>
+                                    <li><strong>Độ bồng bềnh:</strong> Tạo tầng váy xếp nếp công chúa</li>
+                                    <li><strong>Sử dụng cho:</strong> Váy cưới, đầm xòe tiểu thư</li>
+                                </ul>
+                                <a href="#booking" class="btn btn-pink-small">Chọn Vải Này</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             BESPOKE CRAFTING PROCESS (5 Steps)
+        =============================================== -->
+        <section id="process" class="section process-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">HÀNH TRÌNH TỎA SÁNG</span>
+                    <h2 class="section-title">5 Bước May Đo Váy Đầm Nàng Thơ</h2>
+                    <div class="pink-line"></div>
+                    <p class="section-desc">Cùng Nhà thiết kế Nguyễn Thị Tuyết Ngân kiến tạo bộ trang phục mơ ước dành riêng cho bạn.</p>
+                </div>
+
+                <div class="process-timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-step">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Lắng Nghe & Định Hình Gu Thẩm Mỹ</h3>
+                            <p class="step-desc">Trò chuyện riêng cùng Tuyết Ngân về vóc dáng, sở thích màu sắc, dịp xuất hiện (dự tiệc, chụp ảnh kỷ niệm, đám cưới) để chọn phom váy hoàn hảo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Lấy Số Đo 3 Vòng Tỉ Mỉ</h3>
+                            <p class="step-desc">Đo chính xác vòng ngực, hạ eo, vòng mông và chiều cao giày gót để chiếc váy tôn trọn vóc dáng ngọc ngà mà vẫn cực kỳ thoải mái.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Draping Mộc & Cân Chỉnh Đường Cắt</h3>
+                            <p class="step-desc">Nàng được ướm thử phom dáng váy mộc sơ khởi. Đội ngũ thợ may chỉnh sửa nếp xếp ly và độ ôm eo chính xác đến từng milimet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="timeline-step">
+                        <div class="step-num">04</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Đính Kết Hoa Ren & Pha Lê Thủ Công</h3>
+                            <p class="step-desc">Hơn 40 giờ thêu tay từng cánh hoa trà, kết ngọc trai và thắt nơ ruy băng lụa tạo điểm nhấn độc bản duy nhất cho bạn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="timeline-step">
+                        <div class="step-num">05</div>
+                        <div class="step-body">
+                            <h3 class="step-heading">Đóng Gói Hộp Quà Hồng & Trao Tận Tay</h3>
+                            <p class="step-desc">Thiết kế được hấp sấy thơm tho, đóng gói trong hộp quà hồng nơ lụa cao cấp kèm thiệp viết tay và chính sách chỉnh sửa trọn đời.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             PARALLAX BANNER (Kế Thừa Bài 4 Buổi 5 Thuần CSS)
+             Tuyên ngôn từ Nhà thiết kế Nguyễn Thị Tuyết Ngân
+        =============================================== -->
+        <section class="parallax-quote-section">
+            <div class="parallax-quote-overlay">
+                <div class="container text-center quote-content">
+                    <span class="quote-symbol">❝</span>
+                    <blockquote class="quote-text">
+                        Trang phục đẹp nhất của người phụ nữ không chỉ là chiếc váy lộng lẫy, mà chính là sự tự tin và nụ cười rạng ngời khi nàng được là chính mình.
+                    </blockquote>
+                    <div class="quote-author">
+                        <strong>NGUYỄN THỊ TUYẾT NGÂN</strong>
+                        <span>Founder & Creative Fashion Director</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             CUSTOMER REVIEWS / SOCIAL PROOF
+        =============================================== -->
+        <section class="section reviews-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-eyebrow">CẢM NHẬN CỦA NÀNG THƠ</span>
+                    <h2 class="section-title">Khách Hàng Nói Gì Về Tuyết Ngân Atelier</h2>
+                    <div class="pink-line"></div>
+                </div>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Chiếc đầm dạ hội hồng phấn mình đặt may riêng cho đêm tiệc công ty được mọi người khen ngợi không ngớt. Phom váy ôm vừa vặn, lụa satin rủ mềm mại cực kỳ tôn dáng. Cảm ơn Tuyết Ngân rất nhiều!”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">MN</div>
+                            <div>
+                                <h4 class="reviewer-name">Mai Ngọc Linh</h4>
+                                <p class="reviewer-role">Content Creator & Beauty Blogger</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Set áo dạ Tweed tiểu thư mặc vào trông sang xịn mịn vô cùng. Từng đường may tà áo, cúc ngọc trai đều được chăm chút cẩn thận. Mình đã trở thành khách ruột của xưởng may nàng thơ này rồi!”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">HA</div>
+                            <div>
+                                <h4 class="reviewer-name">Đặng Hoàng Anh</h4>
+                                <p class="reviewer-role">Trưởng phòng Marketing Brand Luxury</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-body">“Váy ren hoa 3D nhẹ tênh, mặc đi tiệc trà hay chụp ảnh cưới đều xinh như công chúa bước ra từ cổ tích. Dịch vụ tư vấn của chị Tuyết Ngân ngọt ngào và chu đáo tuyệt đối!”</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar">TT</div>
+                            <div>
+                                <h4 class="reviewer-name">Trần Thảo Tiên</h4>
+                                <p class="reviewer-role">Nghệ Sĩ Piano & Giảng Viên Âm Nhạc</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             APPOINTMENT BOOKING FORM (Thuần HTML5 Validation)
+        =============================================== -->
+        <section id="booking" class="section booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-intro">
+                        <span class="section-eyebrow">TRẢI NGHIỆM ĐẶC QUYỀN</span>
+                        <h2 class="booking-title">Đặt Lịch May Đo & Thử Váy Riêng Tại Showroom</h2>
+                        <p class="booking-desc">Để không gian trà chiều và phòng thay đồ VIP được chuẩn bị chu đáo nhất dành riêng cho nàng, vui lòng đặt lịch hẹn trước tối thiểu 2 giờ.</p>
+
+                        <ul class="booking-perks">
+                            <li>🌸 Thưởng thức Trà Hoa Hồng & Bánh Macaron ngọt ngào trong phòng VIP.</li>
+                            <li>🌸 Trực tiếp chạm thử hơn 300 mẫu lụa tơ tằm, ren Pháp và dạ Tweed.</li>
+                            <li>🌸 Nhà thiết kế Tuyết Ngân tư vấn trực tiếp phom dáng tôn trọn 3 vòng.</li>
+                        </ul>
+                    </div>
+
+                    <form class="booking-form" id="appointment-form" action="#booking" method="GET">
+                        <h3 class="form-heading">Thông Tin Đặt Hẹn Nàng Thơ</h3>
+
+                        <div class="form-group">
+                            <label for="book-name">Họ và tên của Nàng *</label>
+                            <input type="text" id="book-name" name="fullname" required placeholder="Ví dụ: Hoàng Mai Phương" class="form-input">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="book-phone">Số điện thoại *</label>
+                                <input type="tel" id="book-phone" name="phone" required placeholder="0938 xxx xxx" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="book-email">Địa chỉ Email</label>
+                                <input type="email" id="book-email" name="email" placeholder="nangtho@domain.com" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="book-service">Nhu cầu trang phục *</label>
+                                <select id="book-service" name="service" class="form-input" required>
+                                    <option value="couture-dress">Váy Đầm Thiết Kế Nàng Thơ Độc Bản</option>
+                                    <option value="evening-gown">Đầm Dạ Hội & Tiệc Tối Sang Trọng</option>
+                                    <option value="tweed-set">Áo Khoác & Set Dạ Tweed Tiểu Thư</option>
+                                    <option value="wedding-guest">Combo Đầm Dự Tiệc Cưới Cao Cấp</option>
+                                    <option value="styling-session">Tư Vấn Định Hình Phong Cách Nữ Tính</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="book-date">Ngày nàng muốn ghé thăm *</label>
+                                <input type="date" id="book-date" name="date" required class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="book-note">Ghi chú mong muốn đặc biệt</label>
+                            <textarea id="book-note" name="note" rows="3" placeholder="Sự kiện nàng tham dự, tone màu hồng nàng yêu thích, hoặc số đo sơ bộ..." class="form-input"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-pink btn-block">
+                            Xác Nhận Đặt Hẹn Nàng Thơ Ngay
+                        </button>
+                        <p class="form-privacy-note">🔒 Thông tin của nàng được Tuyết Ngân Atelier bảo mật tuyệt đối.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         3. FOOTER (Chuẩn Semantic <footer>)
+    ================================================== -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-content">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="crest-monogram">TN</span>
+                    <span class="brand-name">TUYẾT NGÂN ATELIER</span>
+                </div>
+                <p class="footer-tagline">Nghệ thuật may đo và thiết kế thời trang nữ nàng thơ, kết tinh từ niềm đam mê tôn vinh vẻ đẹp thanh lịch, kiêu kỳ của người phụ nữ Việt.</p>
+                <div class="footer-badges">
+                    <span class="badge-tag">Mulberry Silk 100%</span>
+                    <span class="badge-tag">French Parisian Tweed</span>
+                    <span class="badge-tag">Bespoke Couture</span>
+                </div>
+            </div>
+
+            <!-- Links Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Bộ Sưu Tập Nàng Thơ</h4>
+                <ul class="footer-links">
+                    <li><a href="#products">Váy Đầm Xòe Công Chúa</a></li>
+                    <li><a href="#products">Áo Dạ Tweed Tiểu Thư</a></li>
+                    <li><a href="#products">Đầm Dạ Hội Hồng Satin</a></li>
+                    <li><a href="#products">Sơ Mi Lụa Tay Bồng Kiểu</a></li>
+                    <li><a href="#products">Chân Váy Xếp Ly Maxi</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Dịch Vụ Khách Hàng</h4>
+                <ul class="footer-links">
+                    <li><a href="#process">Quy Trình May Đo 5 Bước</a></li>
+                    <li><a href="#fabrics">Bảng Tra Cứu Vải Thượng Uyển</a></li>
+                    <li><a href="#booking">Đặt Lịch Thử Váy Tại Showroom</a></li>
+                    <li><a href="#home">Chính Sách Chỉnh Sửa Trọn Đời</a></li>
+                    <li><a href="#home">Hướng Dẫn Bảo Quản Lụa & Tweed</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-title">Atelier & Showroom</h4>
+                <address class="footer-address">
+                    <p>📍 <strong>Showroom 1:</strong> 88 Phố Lụa Tơ Tằm, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                    <p>📍 <strong>Atelier Thiết Kế:</strong> 12 Vườn Hồng Nàng Thơ, Ba Đình, Hà Nội</p>
+                    <p>📞 <strong>Hotline Nàng Thơ:</strong> <a href="tel:0938125247">0938.125.NGAN (0938.125.247)</a></p>
+                    <p>✉️ <strong>Thư điện tử:</strong> <a href="mailto:tuyetngan.atelier@luxury.com">tuyetngan.atelier@luxury.com</a></p>
+                    <p>⏰ <strong>Giờ mở cửa:</strong> 09:00 - 21:30 (Tất cả các ngày trong tuần)</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">
+                    © 2026 <strong>TUYẾT NGÂN ATELIER</strong>. Sáng lập & Thiết kế bởi <strong>Nguyễn Thị Tuyết Ngân</strong> (MSSV: 125001247). Đề thi Giữa kỳ Thiết kế Web.
+                </p>
+                <div class="footer-cert">
+                    <span>Chuẩn Semantic HTML5 • CSS Grid & Flexbox • Animate.css • 100% Thuần CSS Không Dùng JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================================================
+         FLOATING ACTION BUTTON (Kế Thừa Bài 1 Buổi 5 Thuần CSS)
+    ================================================== -->
+    <aside class="floating-container" aria-label="Hỗ trợ nhanh">
+        <a href="#booking" class="fab fab-booking" title="Đặt lịch may đo nàng thơ" aria-label="Đặt lịch may đo">
+            <span class="fab-icon">🌸</span>
+            <span class="fab-label">Đặt Lịch Đo</span>
+        </a>
+        <a href="tel:0938125247" class="fab fab-call" title="Gọi Hotline tư vấn" aria-label="Gọi hotline">
+            <span class="fab-icon">📞</span>
+        </a>
+    </aside>
+
+</body>
+</html>
